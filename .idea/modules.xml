@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Mocap.iml" filepath="$PROJECT_DIR$/.idea/Mocap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MocapLSTM.iml" filepath="$PROJECT_DIR$/.idea/MocapLSTM.iml" />
     </modules>
   </component>
 </project>

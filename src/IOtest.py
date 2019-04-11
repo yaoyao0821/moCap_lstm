@@ -1,38 +1,14 @@
-import matplotlib
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
-
 import numpy as np
-import pandas as pd
-from sklearn.pipeline import Pipeline
-import pickle
-
-import os
-import sys
 import math
-import scipy
-import matplotlib
-from mpl_toolkits.mplot3d import Axes3D
-
-
-import os
-import sys
-import math
-import scipy
-import librosa
-import matplotlib.pyplot as plt
-import librosa.display
-
-import tensorflow as tf
-from tensorflow.examples.tutorials.mnist import input_data
 import time
+import src.pathDefine
 
 # audio = np.load('outfile.npy')
-motion = np.load('slowOut.npy') #(1299,100)
+# motion = np.load('slowOut.npy') #(1299,100)
+motion = np.load('../'+src.pathDefine.motion_output)
 
 # print(motion.shape)
 # print(motion)
-
 def getEuler(x,y,z,w):
     R = np.asarray([[1 - 2 * y * y - 2 * z * z, 2 * x * y - 2 * z * w, 2 * x * z + 2 * y * w],
                     [2 * x * y + 2 * z * w, 1 - 2 * x * x - 2 * z * z, 2 * y * z - 2 * x * w],
@@ -65,7 +41,7 @@ def getEuler(x,y,z,w):
     # test2 = [angleY, angleP, angleR]
     return angleY, angleP, angleR
 
-result = []
+euler_motion_output = []
 for i in range(motion.shape[0]): #i-> 0,1,2,...1298
     bvh_data = motion[i]
     list = []
@@ -80,23 +56,27 @@ for i in range(motion.shape[0]): #i-> 0,1,2,...1298
             list.append(x)
             list.append(y)
     array = np.array(list)
-    # print(array.shape)
-    result.append(array)
+    euler_motion_output.append(array)
+
 np.set_printoptions(suppress=True)
-result = np.around(np.array(result),decimals=6)
+euler_motion_output = np.around(np.array(euler_motion_output),decimals=6)
+# result_name = 'slowOut2019.txt'
+# motion_path = 'output/result_output'
+# motion_path = src.pathDefine.motion_output
+# header_path = src.pathDefine.header_output
+# result_path = src.pathDefine.result_output
 
-result_name = 'slowOut2019.txt'
-result_path = 'output/'+result_name
-header_path = 'output/header.txt'
-output_path = 'output/output.bvh'
+motion_quat_path = '../'+src.pathDefine.mition_quat_output
+header_path = '../'+src.pathDefine.header_output
+result_path = '../'+'output/0408SLOW.bvh'
 
-np.savetxt(result_path, result, fmt="%.6f",delimiter=' ')
+np.savetxt(motion_quat_path, euler_motion_output, fmt="%.6f",delimiter=' ')
 
 # timestamp = time.strftime("%m%d%H%M", time.localtime())
 
 with open(header_path,'r') as f_header:
-    with open(result_path,'r') as f_motion:
-        with open(output_path,'w') as f:
+    with open(motion_quat_path,'r') as f_motion:
+        with open(result_path,'w') as f:
             for line in f_header:
                 f.write(line)
             for motion in f_motion:

@@ -1,56 +1,12 @@
-import random as rnd
-# class CreateSequenceData(object):
-#     """
-#     CLASS名字必须大写开头，而且是驼峰规则
-#     function: 本方法可以学习构造数据，主要是了解平常使用的batch数据是如何存放的，以及如何小批量存取规律
-#     """
-#     def __init__(self, n_samples=1000, max_seq_len=20, min_sep_len=3, max_value=1000):
-#         self.labels = []
-#         self.data = []
-#         self.seq_len = []
-#         self.batch_id = 0
-#         for i in range(n_samples):
-#             len = rnd.randint(min_sep_len, max_seq_len)
-#             self.seq_len.append(len)
-#             if rnd.random() < .5:
-#                 rand_start = rnd.randint(0, max_value - len)
-#                 s = [[float(i)/max_value] for i in range(rand_start, rand_start+len)]
-#                 s += [[0.] for i in range(max_seq_len - len)]
-#                 self.data.append(s)
-#                 self.labels.append([1., 0.])
-#             else:
-#                 s = [[float(rnd.randint(0, max_value))/max_value] for i in range(0, len)]
-#                 s +=[[.0] for i in range(0, max_seq_len - len)]
-#                 self.data.append(s)
-#                 self.labels.append([0., 1.])
-#
-#     def next(self, batch_size):
-#         if self.batch_id == len(self.data):
-#             self.batch_id = 0
-#         batch_data = self.data[self.batch_id:min(self.batch_id +batch_size, len(self.data))]
-#         batch_labels = self.labels[self.batch_id:min (self.batch_id + batch_size, len (self.data))]
-#         batch_seq_len = self.seq_len[self.batch_id:min (self.batch_id + batch_size, len (self.data))]
-#         self.batch_id = min (self.batch_id + batch_size, len (self.data))
-#         return batch_data, batch_labels, batch_seq_len
-
-# max_seq_len=20
-# train_sets = CreateSequenceData(n_samples=5, max_seq_len=max_seq_len)
-# test_sets = CreateSequenceData(n_samples=500, max_seq_len=max_seq_len)
-# batch_size = 3
-# batch_data, batch_labels, batch_seq_len = train_sets.next(batch_size=batch_size)
-# print(batch_data)
-# print('===')
-# print(batch_labels)
-# print('===')
-# print(batch_seq_len)
-
 import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+import src.pathDefine
 
 BATCH_START = 0
-MAX_TIME_STEPS = 1300
+MAX_TIME_STEPS = 1299
+# MAX_TIME_STEPS改了也没事！
 # BATCH_SIZE = 50
 BATCH_SIZE = 1
 INPUT_SIZE = 755
@@ -65,16 +21,18 @@ LSTM_LAYER = 3
 # df = pd.read_csv("bvh_feature.csv")
 # bvh = df.iloc[10: df.shape[0] - 1, 4:df.shape[1]].values #(1299, 103)
 # bvh2 = df.iloc[1297: df.shape[0] - 1, 4:df.shape[1]].values #(1299, 103)
+audio_feature = '../'+src.pathDefine.features_audio_file
+bvh_feature = '../'+src.pathDefine.features_bvh_file
+# audio_feature = '../audio_Fast_feature.npy'
 
-audio = np.load('audioSTFT.npy') #(1299, 755)
-audio = audio[10: audio.shape[0], :]
-df = pd.read_csv("bvh_feature.csv")
-bvh = df.iloc[10: df.shape[0] - 1, 4:df.shape[1]].values #(1299, 103)
-
-
-print('===HIBALI KYUYA===')
-# audio_time_step =
-# data_len = np.array([audio.shape[0],audio2.shape[0]], dtype='int64')
+audio = np.load(audio_feature) #(1299, 755)
+audio = audio[: audio.shape[0], :]
+df = pd.read_csv(bvh_feature)
+test = df.values#(1299, 104)
+bvh = df.iloc[: df.shape[0], 4:df.shape[1]].values #(1299, 103)
+# 我当初为啥用的1289呢。。。。
+# print('===HIBALI KYUYA===')
+print('before',audio.shape,bvh.shape)
 def get_batch():
     global BATCH_START, MAX_TIME_STEPS, audio, bvh
     # padding the audio data
@@ -134,7 +92,6 @@ class LSTMRNN(object):
         # x = tf.unstack(x, seq_max_len, 1)
         # x = tf.reshape(self.xs, [-1, self.n_max_steps, self.hidden_units], name='2_3D')
 
-        # 隐藏层
         lstm_cell = tf.contrib.rnn.BasicLSTMCell(self.hidden_units, forget_bias=1.0, state_is_tuple=True)
         # 添加 dropout layer, 一般只设置 output_keep_prob
         lstm_cell = tf.contrib.rnn.DropoutWrapper(cell=lstm_cell, input_keep_prob=0.6)
@@ -165,7 +122,8 @@ class LSTMRNN(object):
         tf.add_to_collection('predict', self.pred)
 
     def compute_cost(self):
-        losses = tf.square(tf.subtract(tf.reshape(self.pred[0:self.seqlen], [-1]), tf.reshape(self.ys[0:self.seqlen], [-1])))
+        # print('inside cost',self.seqlen,self.pred.shape,self.ys.shape)
+        losses = tf.square(tf.reshape(self.pred[0:self.seqlen], [-1])- tf.reshape(self.ys[:,0:self.seqlen,:], [-1]))
         # print(tf.reshape(self.ys, [-1]))
         self.cost = tf.div(
             tf.reduce_mean(losses, name='losses_mean'),
@@ -193,13 +151,13 @@ min_cost=1000000
 if __name__ == '__main__':
     model = LSTMRNN(MAX_TIME_STEPS, INPUT_SIZE, OUTPUT_SIZE, HIDDEN_UNITS, LSTM_LAYER, BATCH_SIZE)
     sess = tf.Session()
-
     sess.run(tf.global_variables_initializer())
     saver = tf.train.Saver()
-    saver.restore(sess, tf.train.latest_checkpoint('./model/'))
+    saver.restore(sess, tf.train.latest_checkpoint('../model/'))
 
     for i in range(30000):
         seq, res, seqlen = get_batch()
+        # print(seq.shape, res.shape, seqlen)
         feed_dict = {
             model.xs: seq,
             model.ys: res,
@@ -221,6 +179,9 @@ if __name__ == '__main__':
         #         model.seqlen: seqlen,
         #         model.cell_init_state: state    # use last state as the initial state for this run
         #     }
+        # print(seq.shape,res.shape,seqlen)
+        # print(tf.reshape(res[:,0:seqlen,:], [-1]))
+        # print(tf.reshape(res, [-1]))
 
         _, cost, state, pred,test = sess.run(
             [model.train_op, model.cost, model.cell_final_state, model.pred, model.test],
@@ -230,10 +191,10 @@ if __name__ == '__main__':
 
         if test < 100 and test < min_cost:
             saver = tf.train.Saver()
-            model_path = "./model/test2"
+            model_path = "../model/test2"
             save_path = saver.save(sess, model_path)
             print("Model saved in file: %s" % save_path)
-            print("round & cost:", i, round(test, 4))
+            print("round & cost:", i, round(test, 4),round(cost, 4))
             min_cost = test
 
 
@@ -243,7 +204,7 @@ if __name__ == '__main__':
             print('======')
 
 
-        if test < 100:
-            name = 'test' + str(i) + 'npy'
-            np.save(name, pred)
-            print("test:", round(test, 4))
+        # if test < 100:
+        #     name = 'test' + str(i) + 'npy'
+        #     np.save(name, pred)
+        #     print("test:", round(test, 4))

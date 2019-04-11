@@ -1,11 +1,12 @@
 import math
 import librosa
 import numpy as np
-import matplotlib.pyplot as plt
+import src.pathDefine
 # import librosa.display
 
 
-audio_path = 'audio/chacha_audio.mp3'
+audio_path = '../'+src.pathDefine.raw_audio_file
+audio_feature = '../'+src.pathDefine.features_audio_file
 # new_file = 'audio/chacha_re.wav'
 
 # sr and frame tiem related to dim of stft results
@@ -27,7 +28,7 @@ for i in range(0,len(time_stamps)-1): # 0,1,2,3,4
 
 
 array = np.array(list)
-np.save('audioSTFT.npy',array)
-
+np.save(audio_feature,array)
+# print(array.shape)(1299, 755)
 # pydub 可以slice audio
 

@@ -1,7 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c86e8439-8a36-4dfd-93e8-499906037b8e" name="Default" comment="" />
+    <list default="true" id="c86e8439-8a36-4dfd-93e8-499906037b8e" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/audioParse3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bvhParse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Mocap.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MocapLSTM.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/IOtest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOtest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio/chacha.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/raw_dataset/audio/chacha_audio.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio/chacha.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio/chacha_re.wav" beforeDir="false" afterPath="$PROJECT_DIR$/raw_dataset/audio/chacha_re.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio/jojo.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/raw_dataset/audio/jojo.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio/jojo_re.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio/list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audioIOParse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audioParse-copy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audioParse-copy2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audioParse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audioParse3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/audioParse5.py" beforeDir="false" afterPath="$PROJECT_DIR$/audioParse5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audioSTFT.npy" beforeDir="false" afterPath="$PROJECT_DIR$/features/audio/audioSTFT.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audioSlowSTFT.npy" beforeDir="false" afterPath="$PROJECT_DIR$/features/audio/audioSlowSTFT.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beat_times.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bvh.csv" beforeDir="false" afterPath="$PROJECT_DIR$/features/mocap/bvh.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bvhEuler.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bvhParse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jojo.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jojoOut.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jojoSTFT.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551155578.macdeMBP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551161679.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551163178.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551227972.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551228422.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551228442.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551228511.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551228547.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551228592.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551228648.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551228670.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551229075.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551229107.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551229328.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551229335.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551229459.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551229546.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551230379.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551230433.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551230490.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551231394.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551235013.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551235051.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551235083.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551236119.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551236174.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551236251.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551236410.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551236536.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551236644.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551236704.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551236832.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551236921.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551236956.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551237030.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551237252.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551237416.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551237650.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551237759.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1551237799.macdeMacBook-Pro.local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lstmKeras.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lstmOut.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lstmOutput.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lstmOutput2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lstmTest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lstmTest2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lstmTest3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lstmTest5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lstmTest6.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lstmTest6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lstmTest7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mocap/chacha.bvh" beforeDir="false" afterPath="$PROJECT_DIR$/raw_dataset/mocap/chacha_bvh.bvh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/test2.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/model/test2.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/test2.index" beforeDir="false" afterPath="$PROJECT_DIR$/model/test2.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/test2.meta" beforeDir="false" afterPath="$PROJECT_DIR$/model/test2.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outfile.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rnnTest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slowOut.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slowOut.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test0npy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test11770npy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test11779npy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1npy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test2npy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test6446npy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test7701.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test7701.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testSLow.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testSlow.csv" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,87 +112,93 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="lstmTest5.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lstmTest5.py">
+      <file leaf-file-name="lstmTest6.py" pinned="true" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lstmTest6.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
-              <caret line="208" column="18" selection-start-line="208" selection-end-line="209" />
+            <state relative-caret-position="75">
+              <caret line="7" column="14" selection-start-line="7" selection-end-line="7" selection-end-column="14" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
+                <element signature="e#2254#2301#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lstmTest6.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lstmTest6.py">
+      <file leaf-file-name="lstmOutput.py" pinned="true" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lstmOutput.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-413">
-              <caret line="156" column="40" lean-forward="true" selection-start-line="156" selection-start-column="40" selection-end-line="156" selection-end-column="40" />
+            <state relative-caret-position="191">
+              <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
               <folding>
-                <element signature="e#0#20#0" expanded="true" />
-                <element signature="e#21#56#0" />
+                <element signature="e#2#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lstmTest7.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lstmTest7.py">
+      <file leaf-file-name="IOtest.py" pinned="true" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/IOtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="65" column="55" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lstmOut.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lstmOut.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1681">
-              <caret line="188" column="29" selection-start-line="188" selection-end-line="189" />
+            <state relative-caret-position="133">
+              <caret line="70" column="36" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
               <folding>
-                <element signature="e#0#20#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#66#98#0" />
+                <element signature="e#569#590#0" />
+                <element signature="e#631#1632#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="audioParse5.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/audioParse5.py">
+      <file leaf-file-name="pathDefine.py" pinned="true" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pathDefine.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="137" column="39" selection-start-line="137" selection-start-column="39" selection-end-line="137" selection-end-column="39" />
+            <state relative-caret-position="270">
+              <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lstmOutput2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lstmOutput2.py">
+      <file leaf-file-name="bvhParse.py" pinned="true" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bvhParse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="100" column="19" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="19" />
+            <state relative-caret-position="242">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
-                <element signature="e#3869#3921#0" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IOtest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IOtest.py">
+      <file leaf-file-name="preprocessing.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pymo/preprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="77" column="11" lean-forward="true" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
+            <state relative-caret-position="15">
+              <caret line="191" column="28" lean-forward="true" selection-start-line="191" selection-start-column="24" selection-end-line="191" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bvhParse.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bvhParse.py">
+      <file leaf-file-name="rotation_tools.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pymo/rotation_tools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-348">
-              <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+            <state relative-caret-position="175">
+              <caret line="178" column="9" lean-forward="true" selection-start-line="178" selection-start-column="9" selection-end-line="178" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="audioParse3.py" pinned="true" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/audioParse3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-87">
+              <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="56" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,24 +214,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>in_hidden</find>
-      <find>batch_size</find>
-      <find>tf.V</find>
-      <find>tf.Va</find>
-      <find>tf.train</find>
-      <find>cell_size</find>
-      <find>average_cost</find>
-      <find>l_in_y</find>
-      <find>xs</find>
-      <find>hidden</find>
-      <find>_weight_variable</find>
-      <find>ys:0</find>
-      <find>ys</find>
-      <find>mel</find>
-      <find>out</find>
-      <find>cost</find>
-      <find>Adam</find>
-      <find>TIME_STEPS</find>
       <find>n_step</find>
       <find>seqlen</find>
       <find>print</find>
@@ -137,72 +226,149 @@
       <find>state</find>
       <find>n_steps</find>
       <find>drop</find>
+      <find>scanner</find>
+      <find>remainder</find>
+      <find>scan</find>
+      <find>re.Scanner</find>
+      <find>tokens</find>
+      <find>_parse_hierarchy</find>
+      <find>frame</find>
+      <find>_parse_motion</find>
+      <find>train</find>
+      <find>train_op</find>
+      <find>cost</find>
+      <find>ys</find>
+      <find>Joint</find>
+      <find>OUTPUT_SIZE</find>
+      <find>MAX_TIME_STEPS</find>
+      <find>quat</find>
+      <find>to_quat</find>
+      <find>_to_quat</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Example1.bvh" />
-        <option value="$PROJECT_DIR$/pymo/rotation_tools.py" />
-        <option value="$PROJECT_DIR$/pymo/preprocessing.py" />
         <option value="$PROJECT_DIR$/audioParse-copy.py" />
         <option value="$PROJECT_DIR$/lstmTest2.py" />
         <option value="$PROJECT_DIR$/rnnTest.py" />
         <option value="$PROJECT_DIR$/lstmTest.py" />
         <option value="$PROJECT_DIR$/lstmTest3.py" />
         <option value="$PROJECT_DIR$/audioParse.py" />
-        <option value="$PROJECT_DIR$/audioParse3.py" />
         <option value="$PROJECT_DIR$/audioIOParse.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/bvhParse.py" />
         <option value="$PROJECT_DIR$/IOtest2.py" />
         <option value="$PROJECT_DIR$/lstmTest5.py" />
         <option value="$PROJECT_DIR$/lstmOut.py" />
         <option value="$PROJECT_DIR$/lstmKeras.py" />
-        <option value="$PROJECT_DIR$/lstmOutput.py" />
-        <option value="$PROJECT_DIR$/lstmTest6.py" />
         <option value="$PROJECT_DIR$/lstmOutput2.py" />
+        <option value="$PROJECT_DIR$/audioParse3.py" />
+        <option value="$PROJECT_DIR$/lstmTest6.py" />
+        <option value="$PROJECT_DIR$/pymo/parsers.py" />
+        <option value="$PROJECT_DIR$/bvhParse.py" />
         <option value="$PROJECT_DIR$/IOtest.py" />
+        <option value="$PROJECT_DIR$/pymo/preprocessing.py" />
+        <option value="$PROJECT_DIR$/lstmOutput.py" />
+        <option value="$PROJECT_DIR$/src/audioParse3.py" />
+        <option value="$PROJECT_DIR$/raw_dataset/mocap/chacha_bvh.bvh" />
+        <option value="$PROJECT_DIR$/src/bvhParse.py" />
         <option value="$PROJECT_DIR$/audioParse5.py" />
+        <option value="$PROJECT_DIR$/src/pathDefine.py" />
+        <option value="$PROJECT_DIR$/output/output.bvh" />
+        <option value="$PROJECT_DIR$/output/result_output.bvh" />
+        <option value="$PROJECT_DIR$/src/lstmOutput.py" />
+        <option value="$PROJECT_DIR$/src/IOtest.py" />
+        <option value="$PROJECT_DIR$/src/lstmTest6.py" />
+        <option value="$PROJECT_DIR$/pymo/rotation_tools.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-3" />
-    <option name="y" value="23" />
+    <option name="x" value="171" />
+    <option name="y" value="44" />
     <option name="width" value="1280" />
     <option name="height" value="706" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Mocap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mocap" type="462c0819:PsiDirectoryNode" />
+              <item name="MocapLSTM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MocapLSTM" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Mocap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mocap" type="462c0819:PsiDirectoryNode" />
+              <item name="MocapLSTM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MocapLSTM" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MocapLSTM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MocapLSTM" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
               <item name="audio" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Mocap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mocap" type="462c0819:PsiDirectoryNode" />
+              <item name="MocapLSTM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MocapLSTM" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="mocap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MocapLSTM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MocapLSTM" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MocapLSTM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MocapLSTM" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MocapLSTM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MocapLSTM" type="462c0819:PsiDirectoryNode" />
               <item name="pymo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MocapLSTM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MocapLSTM" type="462c0819:PsiDirectoryNode" />
+              <item name="raw_dataset" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MocapLSTM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MocapLSTM" type="462c0819:PsiDirectoryNode" />
+              <item name="raw_dataset" type="462c0819:PsiDirectoryNode" />
+              <item name="audio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MocapLSTM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MocapLSTM" type="462c0819:PsiDirectoryNode" />
+              <item name="raw_dataset" type="462c0819:PsiDirectoryNode" />
+              <item name="mocap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MocapLSTM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MocapLSTM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -214,6 +380,12 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/features/audio" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/features/mocap" />
+      <recent name="$PROJECT_DIR$/training" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/pymo" />
@@ -233,25 +405,25 @@
   </component>
   <component name="RunManager" selected="Python.IOtest">
     <configuration name="IOtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Mocap" />
+      <module name="MocapLSTM" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/IOtest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/IOtest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="audioParse5" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Mocap" />
+      <module name="MocapLSTM" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -268,8 +440,8 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="lstmOutput" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Mocap" />
+    <configuration name="bvhParse" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MocapLSTM" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -280,14 +452,14 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lstmOutput.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/bvhParse.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="lstmOutput2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Mocap" />
+    <configuration name="lstmOutput" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MocapLSTM" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -298,44 +470,44 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lstmOutput2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/lstmOutput.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="lstmTest6" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Mocap" />
+      <module name="MocapLSTM" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lstmTest6.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/lstmTest6.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
+      <item itemvalue="Python.bvhParse" />
       <item itemvalue="Python.lstmTest6" />
       <item itemvalue="Python.lstmOutput" />
       <item itemvalue="Python.audioParse5" />
-      <item itemvalue="Python.lstmOutput2" />
       <item itemvalue="Python.IOtest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.IOtest" />
-        <item itemvalue="Python.lstmOutput2" />
-        <item itemvalue="Python.audioParse5" />
-        <item itemvalue="Python.lstmTest6" />
         <item itemvalue="Python.lstmOutput" />
+        <item itemvalue="Python.lstmTest6" />
+        <item itemvalue="Python.audioParse5" />
+        <item itemvalue="Python.bvhParse" />
       </list>
     </recent_temporary>
   </component>
@@ -353,19 +525,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="23" width="1280" height="706" extended-state="0" />
+    <frame x="171" y="44" width="1280" height="706" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2104845" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18903892" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.1429706" side_tool="true" weight="0.25287357" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.1429706" side_tool="true" weight="0.25287357" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32840723" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8570294" weight="0.16420361" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.41707718" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8570294" visible="true" weight="0.28899837" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32840723" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32840723" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49642575" weight="0.39901477" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -377,341 +550,15 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41145">
-          <caret line="2743" selection-start-line="2743" selection-end-line="2743" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Example1.bvh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1890">
-          <caret line="126" column="51" selection-start-line="126" selection-start-column="51" selection-end-line="126" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pymo/preprocessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2835">
-          <caret line="194" lean-forward="true" selection-start-line="194" selection-end-line="194" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/series.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="151" selection-start-line="151" selection-end-line="152" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="368" selection-start-line="368" selection-end-line="368" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.1/python_stubs/-2010535109/numpy/core/multiarray.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1031">
-          <caret line="1360" column="4" selection-start-line="1360" selection-start-column="4" selection-end-line="1360" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn_pandas/pipeline.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="81" column="53" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pymo/parsers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/series.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="151" selection-start-line="151" selection-end-line="152" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Example1.bvh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1710">
-          <caret line="114" column="48" selection-start-line="114" selection-start-column="25" selection-end-line="114" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pymo/rotation_tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="862">
-          <caret line="188" column="20" selection-start-line="188" selection-start-column="20" selection-end-line="188" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beat_times.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/resampy/core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="112" selection-start-line="112" selection-end-line="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pymo/audioParse-copy.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/audio/chacha.txt">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="115">
-          <caret line="76" column="63" selection-start-line="76" selection-start-column="63" selection-end-line="76" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/audio/list.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2103" />
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/numpy/core/shape_base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="346" selection-start-line="346" selection-end-line="346" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/numpy/lib/function_base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="5002" selection-start-line="5002" selection-end-line="5002" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1279">
-          <caret line="1383" selection-start-line="1383" selection-end-line="1383" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/tensorflow/python/framework/ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="1591" selection-start-line="1591" selection-end-line="1591" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/audio/chacha_re.wav">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/tensorflow/python/ops/rnn_cell_impl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="543" column="6" selection-start-line="543" selection-start-column="6" selection-end-line="543" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/audioIOParse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="63" column="14" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-            <element signature="e#725#738#0" />
-            <element signature="e#1146#1164#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rnnTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="252" column="41" selection-start-line="252" selection-start-column="22" selection-end-line="252" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-            <element signature="e#2227#2598#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mocap/chacha.bvh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="156" column="20" selection-start-line="156" selection-start-column="12" selection-end-line="156" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lstmTest3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2099">
-          <caret line="48" column="69" selection-start-line="48" selection-start-column="57" selection-end-line="48" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lstmTest2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lstmTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="148" selection-start-line="148" selection-end-line="150" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pymo/preprocessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1153">
-          <caret line="25" column="36" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/audioParse-copy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="114" column="20" selection-start-line="114" selection-start-column="8" selection-end-line="114" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/tensorflow/python/client/session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="1270" column="14" selection-start-line="1270" selection-start-column="14" selection-end-line="1270" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bvh.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="71" selection-start-line="1" selection-start-column="31" selection-end-line="2" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/tensorflow/python/training/saver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9863">
-          <caret line="1320" selection-start-line="1320" selection-end-line="1320" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/keras/backend/tensorflow_backend.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="2676" lean-forward="true" selection-start-line="2676" selection-end-line="2676" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lstmKeras.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/audioParse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="191" column="24" selection-start-line="191" selection-start-column="4" selection-end-line="191" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-            <element signature="e#3384#3411#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/audioParse-copy2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="142" column="15" selection-start-line="142" selection-end-line="143" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/audioParse3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-917">
-          <caret line="181" column="27" selection-start-line="181" selection-start-column="18" selection-end-line="181" selection-end-column="27" />
-          <folding>
-            <element signature="e#2626#2627#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IOtest2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bvhParse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-348">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lstmOutput.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lstmTest5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="208" column="18" selection-start-line="208" selection-end-line="209" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lstmOut.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1681">
+        <state relative-caret-position="199">
           <caret line="188" column="29" selection-start-line="188" selection-end-line="189" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
@@ -721,43 +568,338 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lstmTest7.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
+        <state relative-caret-position="208">
           <caret line="65" column="55" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pymo/rotation_tools.py!">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/audioIOParse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="63" column="14" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bvhEuler.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pymo/writers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pymo/viz_tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-423">
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pymo/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-557" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pymo/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.1/python_stubs/-2010535109/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5100" column="11" selection-start-line="5100" selection-start-column="11" selection-end-line="5100" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/201904.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2148" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result-readline.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="970">
+          <caret line="154" column="6" selection-start-line="154" selection-start-column="6" selection-end-line="154" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1859">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/slowOut201904.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/slowOut2019.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/header.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2105" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slowOut.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/output.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="1450" column="80" selection-start-line="1450" selection-start-column="80" selection-end-line="1450" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/training dataset/audio/jojo_re.wav">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raw_dataset/audio/chacha_re.wav">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/training dataset/audio/chacha.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="551">
+          <caret line="76" column="63" selection-start-line="76" selection-start-column="63" selection-end-line="76" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/training dataset/audio/list.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="-2420" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IOtest2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/librosa/core/audio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/audioread/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/audioread/rawread.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/numpy/lib/npyio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="371" selection-start-line="371" selection-end-line="371" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/tensorflow/python/training/saver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1744" selection-start-line="1744" selection-end-line="1744" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/tensorflow/python/framework/ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-578">
+          <caret line="5881" column="4" selection-start-line="5881" selection-start-column="4" selection-end-line="5881" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Example1.bvh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1634" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/mocap/bvh_feature.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/audioParse5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="137" column="39" selection-start-line="137" selection-start-column="39" selection-end-line="137" selection-end-column="39" />
+        <state relative-caret-position="210">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lstmOutput2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="100" column="19" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="19" />
+        <state relative-caret-position="134">
+          <caret line="100" column="20" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/mocap/bvh.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raw_dataset/mocap/chacha_bvh.bvh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2160">
+          <caret line="144" column="32" selection-start-line="144" selection-start-column="32" selection-end-line="144" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/audioParse3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-87">
+          <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="56" />
           <folding>
-            <element signature="e#3869#3921#0" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IOtest.py">
+    <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/tensorflow/python/client/session.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="77" column="11" lean-forward="true" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
+        <state relative-caret-position="111">
+          <caret line="1306" selection-start-line="1306" selection-end-line="1306" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lstmTest6.py">
+    <entry file="file://$PROJECT_DIR$/output/header_output.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-413">
-          <caret line="156" column="40" lean-forward="true" selection-start-line="156" selection-start-column="40" selection-end-line="156" selection-end-column="40" />
+        <state relative-caret-position="254">
+          <caret line="156" column="20" selection-start-line="156" selection-end-line="156" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/result_output.bvh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="156" column="20" lean-forward="true" selection-start-line="156" selection-start-column="20" selection-end-line="156" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/output.bvh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="155" column="12" selection-start-line="155" selection-start-column="8" selection-end-line="155" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pathDefine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lstmOutput.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
-            <element signature="e#21#56#0" />
+            <element signature="e#2#25#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IOtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="70" column="36" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#66#98#0" />
+            <element signature="e#569#590#0" />
+            <element signature="e#631#1632#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lstmTest6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="14" selection-start-line="7" selection-end-line="7" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#2254#2301#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bvhParse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pymo/features.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pymo/parsers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1216">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pymo/preprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="191" column="28" lean-forward="true" selection-start-line="191" selection-start-column="24" selection-end-line="191" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pymo/rotation_tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="178" column="9" lean-forward="true" selection-start-line="178" selection-start-column="9" selection-end-line="178" selection-end-column="9" />
         </state>
       </provider>
     </entry>
